@@ -13,9 +13,7 @@ export default defineConfig({
       ],server: {
     host: '0.0.0.0',
     port: 5173,
-         allowedHosts: [
-      'paltaxi.onrender.com', // Permite tu dominio de Render
-    ],
+         allowedHosts: 'all'
   }
     },
   },
