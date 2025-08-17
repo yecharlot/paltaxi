@@ -14,15 +14,7 @@ export default defineConfig({
     },
   },
   server: {
-    host: '0.0.0.0',  // Acepta conexiones externas (necesario para Render)
-    port: 5173,       // Puerto opcional (ajusta si es necesario)
-    strictPort: true,  // Evita que Vite cambie el puerto si está ocupado
-    allowedHosts: 'all', // ⚠️ Desactiva la protección (¡No seguro en producción!)
-  },
-  preview: {          // Configuración para `vite preview` (producción)
     host: '0.0.0.0',
-    port: 5173,
-    strictPort: true,
-    allowedHosts: 'all', // ⚠️ Desactiva también en preview
+    allowedHosts: [process.env.HOST || 'paltaxi.onrender.com'],
   },
 });
