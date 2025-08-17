@@ -22,7 +22,5 @@ export default defineConfig({
     strictPort: true,
     allowedHosts: 'all', // ⚠️ Desactiva también en preview
   },
-  }
-    },
   },
 });
