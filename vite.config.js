@@ -10,7 +10,10 @@ export default defineConfig({
       plugins: [
         tailwindcss(), // 👈 Usa Tailwind como plugin
         autoprefixer(), // 👈 Usa Autoprefixer
-      ],server: {
+      ],
+    },
+  },
+  server: {
     host: '0.0.0.0',  // Acepta conexiones externas (necesario para Render)
     port: 5173,       // Puerto opcional (ajusta si es necesario)
     strictPort: true,  // Evita que Vite cambie el puerto si está ocupado
@@ -22,5 +25,4 @@ export default defineConfig({
     strictPort: true,
     allowedHosts: 'all', // ⚠️ Desactiva también en preview
   },
-  
 });
