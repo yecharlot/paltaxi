@@ -12,7 +12,10 @@ export default defineConfig({
         autoprefixer(), // 👈 Usa Autoprefixer
       ],server: {
     host: '0.0.0.0',
-    port: 5173 // o el puerto que uses
+    port: 5173,
+         allowedHosts: [
+      'paltaxi.onrender.com', // Permite tu dominio de Render
+    ],
   }
     },
   },
